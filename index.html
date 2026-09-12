@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Sleek Tech Typography -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Animated Ambient Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO<span>.</span></div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#enquiry" class="btn-nav">Send Enquiry</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero / About Section with Profile Photo -->
+    <section id="about" class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <span class="badge">✨ Available for Worldwide Opportunities</span>
+                <h1>Hi, I'm a <br><span class="gradient-text type-effect">Creative Developer</span></h1>
+                <p>Welcome to my premium digital showroom. I design and build highly optimized, interactive, and beautiful digital systems using cutting-edge front-end stack models.</p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn btn-primary">Explore Projects</a>
+                    <a href="#enquiry" class="btn btn-secondary">Get a Quote</a>
+                </div>
+            </div>
+            
+            <!-- User Photo Container -->
+            <div class="hero-image-wrapper">
+                <div class="photo-frame">
+                    <!-- REPLACE 'your-photo.jpg' WITH YOUR ACTUAL IMAGE URL OR PATH -->
+                    <img src="C:\Users\nithu\Downloads\Portfolio\image1\pic.jpeg" alt="Your Profile Photo" class="profile-img">
+                    <div class="glow-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Work Portfolio Section -->
+    <section id="work" class="projects-section">
+        <div class="section-header">
+            <h2>Featured Productions</h2>
+            <p>A selective look at the modern web platforms and components I have developed.</p>
+            
+            <!-- Filter Category Tabs -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+              
+            </div>
+        </div>
+                    <!-- Project Card 1: WhatsApp Ordering Bot -->
+            <div class="project-card" data-category="development">
+                <!-- Wrap the image box in an anchor tag pointing to your live app deployment -->
+                <a href="https://nithu121.github.io/Order-Managment/" target="_blank" rel="noopener noreferrer" class="project-image-link">
+                    <div class="project-image-box">
+                        <!-- Replace with your actual project screenshot path when ready -->
+                        <img src="C:\Users\nithu\Downloads\Portfolio\image1\f.jpg" alt="WhatsApp Restaurant Bot Preview">
+                        <div class="card-overlay"><span>Live Demo ↗</span></div>
+                    </div>
+                </a>
+                <div class="project-info">
+                    <span class="project-tag">HTML / CSS / JavaScript</span>
+                    <h3>Solo-Hotel WhatsApp Ordering Suite</h3>
+                    <p>A smart micro-ordering application custom-built for single-operator restaurants. It enables tableside customers to dynamically adjust food parameters—like tea strength or double-roast dosas—while instantly recalculating itemized billing tiers and dispatching streamlined, print-ready orders straight to the cook's WhatsApp terminal.</p>
+                </div>
+            </div>
+
+
+                   <!-- Project Card 2: Contactless QR Digital Menu -->
+            <div class="project-card" data-category="design">
+                <!-- Wrap the image box in an anchor tag pointing to your live site -->
+                <a href="https://nithu121.github.io/Food-menu/" target="_blank" rel="noopener noreferrer" class="project-image-link">
+                    <div class="project-image-box">
+                        <!-- Using an actual screenshot or preview image of your layout makes the card look highly professional -->
+                        <img src="C:\Users\nithu\Downloads\Portfolio\image1\1.png" alt="QR Digital Menu Preview">
+                        <div class="card-overlay"><span>Live Demo ↗</span></div>
+                    </div>
+                </a>
+                <div class="project-info">
+                    <span class="project-tag">HTML / CSS / JavaScript</span>
+                    <h3>QR-Code Contactless Digital Menu</h3>
+                    <p>A beautiful, mobile-first web app built for tableside ordering at <strong>Food Junction</strong>, featuring automated interactive workflows, diet sorting filters, and a direct WhatsApp order processor.</p>
+                </div>
+            </div>
+
+
+
+
+    <!-- Advanced Responsive Enquiry Box Section -->
+    <section id="enquiry" class="enquiry-section">
+        <div class="enquiry-container">
+            <div class="enquiry-info">
+                <h2>Let's build a masterpiece.</h2>
+                <p>Have a business project proposal or an open position? Fill out the interactive sheet to share specifications.</p>
+                <div class="contact-details">
+                    <div class="detail-item">📧 nithushetty121@gmail.com</div>
+                    <div class="detail-item">📍 Location: Remote / Available to Travel</div>
+                </div>
+            </div>
+
+            <!-- Enquiry Box Form -->
+            <div class="enquiry-box">
+                <form id="portfolioForm">
+                    <div class="input-group">
+                        <label for="name">Enter ur name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Ur.com address></address></label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="service">Required Project Tier</label>
+                        <select id="service">
+                            <option value="web-dev">Full-Stack Web Development</option>
+                            <option value="ui-design">UI/UX Interface Design</option>
+                            <option value="consulting">other</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Project Description & Requirements</label>
+                        <textarea id="message" rows="5" required placeholder="Tell me about what you're trying to build..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Secure Enquiry 🚀</button>
+                </form>
+                <div id="formFeedback" class="form-feedback hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script File Integration -->
+    <script src="script.js"></script>
+</body>
+</html>
